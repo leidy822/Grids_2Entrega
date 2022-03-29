@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: darkslategray;
+}
+
+.menu {
+  list-style-type: none;
+}
+.menu li {
+  display: inline-block;
+  font-family: "Redressed", cursive;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.menu li a {
+  color: rgb(185, 108, 6);
+  text-align: end;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+nav {
+  display: flex;
+  justify-content: end;
+}
+
+li :hover {
+  background-color: aqua;
+}
+
+h3 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: rgb(126, 235, 235);
+  word-spacing: 3px;
+  text-decoration: double;
+  font-size: 2.2rem;
+  text-align: center;
+  padding: 2rem;
+}
+
+img {
+  size: 2px;
+  display: block;
+  margin: auto;
+  width: 10%;
+  opacity: 0.6;
+  height: auto;
+  border-style: double;
+  border-color: bisque;
+}
+
+.parrafos {
+  width: 90%;
+  margin: 20px auto;
+  display: grid;
+  text-align: justify;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  gap: 8px;
+  grid-area: parafos-header;
+  grid-template-areas:
+    "parrafo1 parrafo1 "
+    "parrafo2 parrafo3";
+}
+
+.parrafos {
+  margin: 20px auto;
+  width: 90%;
+  justify-content: center;
+  word-spacing: 2px;
+  font-size: 1.5rem;
+  word-spacing: 0.6px;
+  font-family: "Redressed", cursive;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 2fr;
+  gap: 10px;
+  grid-template-areas:
+    "parra1 parra1"
+    "parra2 parra3";
+}
+.parra1 {
+  color: burlywood;
+  grid-area: parra1;
+  padding: 20px;
+}
+.parra2 {
+  color: rgb(240, 171, 81);
+  padding: 25px;
+}
+.parra3 {
+  color: rgb(185, 108, 6);
+  padding: 25px;
+}
+
+footer .container {
+  width: 90%;
+  margin: auto;
+}
+
+footer small {
+  color: rgb(240, 171, 81);
+  font-family: "Redressed", cursive;
+  text-align: right;
+}
+
+@media screen and (max-width: 1024px) {
+  * {
+    background-color: #2a2a33;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  * {
+    background-color: #030952;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  * {
+    background-color: #000;
+  }
+}
